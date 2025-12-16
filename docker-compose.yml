@@ -1,0 +1,16 @@
+services:
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: notes
+    volumes:
+      - mysql_data:/var/lib/mysql
+  
+  app:
+    build: .
+    depends_on:
+      - db
+
+volumes:
+  mysql_data

@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# Jenkins
+.jenkins/
+jenkins_home/
+workspace/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# MySQL (local dump vs)
+*.sql
